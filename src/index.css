@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Make the whole app span the full viewport and use the gray bg */
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+
+  /* Remove Vite starter constraints that cause the white strip */
+  #root {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    @apply bg-gray-100;
+  }
+}
